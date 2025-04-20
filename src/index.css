@@ -1,0 +1,21 @@
+/* Tailwind Imports */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Background and Text Color Support for Light and Dark Mode */
+body {
+  @apply bg-white dark:bg-gray-900 text-black dark:text-white transition-colors duration-300;
+}
+
+/* Tailwind Dark Mode Support */
+html.dark {
+  background-color: #1a202c; /* Dark background */
+}
+
+/* Add any custom styling below */
