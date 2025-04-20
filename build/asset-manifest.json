@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/the-coin-lab/static/css/main.69ea52a3.css",
+    "main.js": "/the-coin-lab/static/js/main.b0904b0a.js",
+    "index.html": "/the-coin-lab/index.html",
+    "main.69ea52a3.css.map": "/the-coin-lab/static/css/main.69ea52a3.css.map",
+    "main.b0904b0a.js.map": "/the-coin-lab/static/js/main.b0904b0a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.69ea52a3.css",
+    "static/js/main.b0904b0a.js"
+  ]
+}
