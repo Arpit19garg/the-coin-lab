@@ -55,13 +55,11 @@ export default function Home() {
     },
   ];
 
-  // Auto-scrolling testimonial index
   useEffect(() => {
     const autoScroll = setInterval(() => {
       setScrollIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
-    }, 4000); // Changes testimonial every 4 seconds
-
-    return () => clearInterval(autoScroll); // Cleanup on component unmount
+    }, 4000);
+    return () => clearInterval(autoScroll);
   }, [testimonials.length]);
 
   const nextTestimonial = () => {
@@ -79,7 +77,10 @@ export default function Home() {
       {/* Hero Section */}
       <div
         className="relative h-[80vh] bg-cover bg-center flex items-center justify-center text-white font-serif"
-        style={{ backgroundImage: "url('/hero-coin-bg.jpg')" }}
+        style={{
+          backgroundImage:
+            "url('https://upload.wikimedia.org/wikipedia/commons/thumb/1/16/Coin_collection.jpg/960px-Coin_collection.jpg')",
+        }}
       >
         <div className="absolute inset-0 bg-black bg-opacity-60"></div>
         <div className="relative z-10 text-center px-4 max-w-2xl">
@@ -119,23 +120,30 @@ export default function Home() {
       <div className="bg-gray-100 py-16 px-6 md:px-20 font-sans">
         <h2 className="text-3xl font-semibold text-center mb-10 text-gray-800">Our Key Features</h2>
         <div className="grid md:grid-cols-3 gap-8">
-          {/* Feature 1 */}
           <div className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition">
-            <img src="/grading-icon.png" alt="Grading Icon" className="w-16 h-16 mx-auto mb-4" />
+            <img
+              src="https://assets.dryicons.com/uploads/icon/svg/6399/ef33d57d-4f9e-4110-8823-278f89df747c.svg"
+              alt="Grading Icon"
+              className="w-16 h-16 mx-auto mb-4"
+            />
             <h3 className="text-xl font-bold mb-2">Standardized Grading</h3>
             <p className="text-gray-600">Our proprietary grading system ensures every coin is evaluated with precision and consistency.</p>
           </div>
-
-          {/* Feature 2 */}
           <div className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition">
-            <img src="/marketplace-icon.png" alt="Marketplace Icon" className="w-16 h-16 mx-auto mb-4" />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1170/1170576.png"
+              alt="Marketplace Icon"
+              className="w-16 h-16 mx-auto mb-4"
+            />
             <h3 className="text-xl font-bold mb-2">Trusted Marketplace</h3>
             <p className="text-gray-600">Buy and sell rare coins with confidence through verified listings and secure checkout.</p>
           </div>
-
-          {/* Feature 3 */}
           <div className="bg-white rounded-xl shadow-lg p-6 text-center hover:shadow-xl transition">
-            <img src="/community-icon.png" alt="Community Icon" className="w-16 h-16 mx-auto mb-4" />
+            <img
+              src="https://cdn-icons-png.flaticon.com/512/1388/1388849.png"
+              alt="Community Icon"
+              className="w-16 h-16 mx-auto mb-4"
+            />
             <h3 className="text-xl font-bold mb-2">Collector Community</h3>
             <p className="text-gray-600">Connect with fellow enthusiasts, share collections, and learn through our expert blog.</p>
           </div>
@@ -162,7 +170,6 @@ export default function Home() {
             ))}
           </div>
 
-          {/* Arrows */}
           <div
             className="absolute top-1/2 left-0 transform -translate-y-1/2 text-2xl text-white cursor-pointer"
             onClick={prevTestimonial}
