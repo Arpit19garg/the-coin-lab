@@ -19,7 +19,7 @@ export default function Contact() {
             📧 <span className="font-medium">Email:</span> <a href="mailto:support@thecoinlab.in" className="underline">support@thecoinlab.in</a>
           </div>
           <div className="hover:text-yellow-600 transition duration-300">
-            📸 <span className="font-medium">Instagram:</span> <a href="https://instagram.com/thecoinlab" target="_blank" rel="noreferrer" className="underline">@thecoinlab</a>
+            📸 <span className="font-medium">Instagram:</span> <a href="https://instagram.com/thecoinlab_tcl" target="_blank" rel="noreferrer" className="underline">@thecoinlab_tcl</a>
           </div>
           <div className="hover:text-yellow-600 transition duration-300">
             📍 <span className="font-medium">Location:</span> Pilani, India
