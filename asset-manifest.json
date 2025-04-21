@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/the-coin-lab/static/css/main.6a4230f6.css",
-    "main.js": "/the-coin-lab/static/js/main.1a4d01ab.js",
+    "main.css": "/the-coin-lab/static/css/main.1470ae4e.css",
+    "main.js": "/the-coin-lab/static/js/main.a583b276.js",
     "index.html": "/the-coin-lab/index.html",
-    "main.6a4230f6.css.map": "/the-coin-lab/static/css/main.6a4230f6.css.map",
-    "main.1a4d01ab.js.map": "/the-coin-lab/static/js/main.1a4d01ab.js.map"
+    "main.1470ae4e.css.map": "/the-coin-lab/static/css/main.1470ae4e.css.map",
+    "main.a583b276.js.map": "/the-coin-lab/static/js/main.a583b276.js.map"
   },
   "entrypoints": [
-    "static/css/main.6a4230f6.css",
-    "static/js/main.1a4d01ab.js"
+    "static/css/main.1470ae4e.css",
+    "static/js/main.a583b276.js"
   ]
 }
