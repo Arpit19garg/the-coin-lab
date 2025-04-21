@@ -1,7 +1,9 @@
 import { useEffect, useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Cart() {
   const [cart, setCart] = useState([]);
+  const navigate = useNavigate();
 
   useEffect(() => {
     const storedCart = JSON.parse(localStorage.getItem("cart")) || [];
@@ -47,12 +49,12 @@ export default function Cart() {
       {cart.length === 0 ? (
         <div className="text-center">
           <p className="text-lg mb-4">Your cart is currently empty.</p>
-          <a
-            href="/products"
+          <Link
+            to="/products"
             className="inline-block bg-blue-600 text-white px-5 py-2 rounded hover:bg-blue-700"
           >
             Browse Coins
-          </a>
+          </Link>
         </div>
       ) : (
         <>
@@ -112,7 +114,7 @@ export default function Cart() {
                 Clear Cart
               </button>
               <button
-                onClick={() => alert("Proceeding to payment (not implemented)")}
+                onClick={() => navigate("/thank-you")}
                 className="w-full md:w-auto bg-yellow-500 text-white px-6 py-2 rounded hover:bg-yellow-600"
               >
                 Proceed to Buy
